@@ -1,0 +1,78 @@
+:root {
+  --dark-grey: #231f20;
+  --blue: #01ffff;
+  --pink: rgb(255, 0, 254);
+  --white: #f1ffe9;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--dark-grey);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.2em;
+}
+
+body {
+  background-color: var(--dark-grey);
+}
+
+.site-title {
+  background-color: var(--pink);
+  border: 0.15em dashed var(--blue);
+  border-radius: 0.2em;
+  color: var(--dark-grey);
+  display: block;
+  text-align: center;
+  font-size: 4em;
+}
+
+#myInput {
+  background-color: var(--dark-grey);
+  background-image: url("/css/searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  border-radius: 0.2em;
+  color: var(--white);
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 0.25em dashed var(--blue);
+  margin-bottom: 12px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--pink);
+  opacity: 1; /* Firefox */
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 0.25em dashed var(--pink);
+  border-radius: 0.2em;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: var(--blue);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--dark-grey);
+  display: block;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: var(--blue);
+}
+
+.title {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.lyrics {
+  display: none;
+}
