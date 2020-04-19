@@ -83,6 +83,28 @@ const songs = {
             Not to impress
             The band you opened up for yesterday`,
   },
+  "Showerbeers!": {
+    title: "Showerbeers!",
+    lyrics: `I just got paid/lost my job so it's a heavy night of drinking
+    You can smoke in the bar so when I come home I'm stinking
+    The smell on my clothes is offending to the nose
+    But that's not the reason that I'm stepping in
+    The only reason I take a shower is so I can drink a showerbeer
+    So I can drink a showerbeer
+    So I can drink a showerbeer
+    So I can drink a showerbeer
+    So I. Can. Drink. A. Showerbeer
+    I just got paid/lost my job so it's a heavy night of drinking
+    You can smoke in the bar so when I come home I'm stinking
+    The smell on my clothes is offending to the nose
+    But that's not the reason that I'm stepping in
+    The only reason I take a shower is so I can drink a showerbeer
+    So I can drink a showerbeer
+    So I can drink a showerbeer
+    So I can drink a showerbeer
+    So I. Can. Drink. A
+    Showerbeer!`,
+  },
   "Stand There Until You’re Sober": {
     title: "Stand There Until You’re Sober",
     lyrics: `Brown paper bags metal cans
@@ -1786,3 +1808,15 @@ document.querySelectorAll(".link").forEach((item) => {
     }
   });
 });
+
+document.getElementById("site-description").onclick = function () {
+  if (
+    document.getElementById("site-description-text").style.display ===
+    "inline-block"
+  ) {
+    document.getElementById("site-description-text").style.display = "none";
+  } else {
+    document.getElementById("site-description-text").style.display =
+      "inline-block";
+  }
+};

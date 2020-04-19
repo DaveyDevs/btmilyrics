@@ -26,6 +26,37 @@ body {
   font-size: 4em;
 }
 
+#site-description {
+  background-color: var(--dark-grey);
+  border: 0.25em dashed var(--pink);
+  margin-bottom: 2em;
+}
+
+.description-intro {
+  color: var(--white);
+  font-size: 1.75em;
+  text-align: center;
+}
+
+#site-description-text {
+  display: none;
+  margin-top: -2em;
+}
+
+#site-description-text p {
+  color: var(--white);
+  padding: 0.8em;
+}
+
+#band-name {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 1.1em;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: var(--pink);
+}
+
 #myInput {
   background-color: var(--dark-grey);
   background-image: url("/css/searchicon.png");
